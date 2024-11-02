@@ -1,4 +1,4 @@
-#include "seqlist.cpp"
+#include "seqlist.h"
 #include <iostream>
 using namespace std;
 

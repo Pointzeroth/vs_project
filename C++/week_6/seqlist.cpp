@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+template <typename T> class seqlist;
+
 template <typename T>
 seqlist<T>::seqlist()
 {
