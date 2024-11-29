@@ -6,7 +6,7 @@
 #include <iostream>      //引用输入输出流
 #include "SeqList.cpp"     //引入顺序表的类  
 #include <string>
-using namespace std;
+
 
 // 当使用<iostream>的时候，该头文件没有定义全局命名空间，
 // 必须使用namespace std；这样才能正确使用cout。

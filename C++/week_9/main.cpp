@@ -9,18 +9,18 @@ int main() {
 
     do {  
         std::cout << "main:" << std::endl;  
-        std::cout << "1. 添加联系人" << std::endl;  
-        std::cout << "2. 显示所有联系人" << std::endl;  
-        std::cout << "3. 删除联系人" << std::endl;  
-        std::cout << "4. 退出" << std::endl;  
-        std::cout << "请输入您的选择: ";  
+        std::cout << "1. addContact" << std::endl;  
+        std::cout << "2. printAllContacts" << std::endl;  
+        std::cout << "3. deleteContact" << std::endl;  
+        std::cout << "4. exit" << std::endl;  
+        std::cout << "input your choice: ";  
         std::cin >> choice;  
 
         switch (choice) {  
             case 1:  
-                std::cout << "请输入姓名: ";  
+                std::cout << "input name: ";  
                 std::cin >> name;  
-                std::cout << "请输入电话号码: ";  
+                std::cout << "input phone number: ";  
                 std::cin >> phoneNumber;  
                 Addressbook.addContact(name, phoneNumber);  
                 break;  
@@ -28,15 +28,15 @@ int main() {
                 Addressbook.printAllContacts();  
                 break;  
             case 3:  
-                std::cout << "请输入要删除的姓名: ";  
+                std::cout << "input name to delete: ";  
                 std::cin >> name;  
                 Addressbook.deleteContact(name);  
                 break;  
             case 4:  
-                std::cout << "退出程序。" << std::endl;  
+                std::cout << "exit" << std::endl;  
                 break;  
             default:  
-                std::cout << "无效选择，请重新输入。" << std::endl;  
+                std::cout << "error choice" << std::endl;  
         }  
     } while (choice != 4);  
 
